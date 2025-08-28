@@ -3,6 +3,8 @@ import DateAndTime from "./compounent/DateandTime"
 import {AppBar, Box, Toolbar, Typography} from "@mui/material"
 import Header from "./compounent/Header/Header"
 import Footer from "./compounent/Footer/Footer"
+import Home from "./pages/Home/Home"
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
               </AppBar>
         </Box>
                   <Header/>
+                  <Home />
                   <Footer />
  
     </>

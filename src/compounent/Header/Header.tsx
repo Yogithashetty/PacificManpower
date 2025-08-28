@@ -1,7 +1,6 @@
 
 import { AppBar, Toolbar, Typography, Button} from "@mui/material";
 
-
 function Header() {
   return (
     <AppBar position="static" sx={{ backgroundColor: "white" }}>

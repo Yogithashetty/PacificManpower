@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       {/* Newsletter Section */}
       <Box
         sx={{
-          display: "flex",
+          // display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
           flexWrap: "wrap",
