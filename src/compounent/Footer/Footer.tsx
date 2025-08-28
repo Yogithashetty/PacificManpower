@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, TextField, Button, Link, Grid } from "@mui/material";
+import { Box, Typography, TextField, Button, Link } from "@mui/material";
 
 const Footer: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       {/* Newsletter Section */}
       <Box
         sx={{
-          // display: "flex",
+          display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
           flexWrap: "wrap",
@@ -51,9 +51,17 @@ const Footer: React.FC = () => {
       </Box>
 
       {/* Footer Links Section */}
-      <Grid container spacing={4} sx={{ px: { xs: 2, md: 6 }, py: 4 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          px: { xs: 2, md: 6 },
+          py: 4,
+        }}
+      >
         {/* Address */}
-        <Grid item xs={12} md={3}>
+        <Box sx={{ flex: "1 1 200px", mb: 3 }}>
           <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
             Address
           </Typography>
@@ -61,19 +69,19 @@ const Footer: React.FC = () => {
             Mangalore <br />
             Karnataka
           </Typography>
-        </Grid>
+        </Box>
 
         {/* Contact */}
-        <Grid item xs={12} md={3}>
+        <Box sx={{ flex: "1 1 200px", mb: 3 }}>
           <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
             Contact
           </Typography>
           <Typography variant="body2">988676356373</Typography>
           <Typography variant="body2">contact@pacificmanpower.com.pg</Typography>
-        </Grid>
+        </Box>
 
         {/* Discover */}
-        <Grid item xs={12} md={3}>
+        <Box sx={{ flex: "1 1 200px", mb: 3 }}>
           <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
             Discover
           </Typography>
@@ -86,10 +94,10 @@ const Footer: React.FC = () => {
           <Link href="#" color="inherit" underline="hover" sx={{ display: "block" }}>
             Login
           </Link>
-        </Grid>
+        </Box>
 
         {/* Core Service */}
-        <Grid item xs={12} md={3}>
+        <Box sx={{ flex: "1 1 200px", mb: 3 }}>
           <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
             Core Service
           </Typography>
@@ -105,8 +113,8 @@ const Footer: React.FC = () => {
           <Link href="#" color="inherit" underline="hover" sx={{ display: "block" }}>
             Technical Services
           </Link>
-        </Grid>
-      </Grid>
+        </Box>
+      </Box>
     </Box>
   );
 };
