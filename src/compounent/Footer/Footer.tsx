@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Typography, TextField, Button,  Link } from "@mui/material";
-import {Grid} from "@mui/material/Grid";
+import { Box, Typography, TextField, Button, Link, Grid } from "@mui/material";
 
 const Footer: React.FC = () => {
   return (
@@ -18,7 +17,7 @@ const Footer: React.FC = () => {
         }}
       >
         <Box>
-          <Typography variant="h6" fontWeight="bold">
+          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
             Get New Jobs Notification!
           </Typography>
           <Typography variant="body2">
@@ -55,57 +54,55 @@ const Footer: React.FC = () => {
       <Grid container spacing={4} sx={{ px: { xs: 2, md: 6 }, py: 4 }}>
         {/* Address */}
         <Grid item xs={12} md={3}>
-          <Typography variant="subtitle1" fontWeight="bold">
+          <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
             Address
           </Typography>
           <Typography variant="body2">
-            Mangolre <br />
+            Mangalore <br />
             Karnataka
           </Typography>
         </Grid>
 
         {/* Contact */}
         <Grid item xs={12} md={3}>
-          <Typography variant="subtitle1" fontWeight="bold">
+          <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
             Contact
           </Typography>
           <Typography variant="body2">988676356373</Typography>
-          <Typography variant="body2">
-            contact@pacificmanpower.com.pg
-          </Typography>
+          <Typography variant="body2">contact@pacificmanpower.com.pg</Typography>
         </Grid>
 
         {/* Discover */}
         <Grid item xs={12} md={3}>
-          <Typography variant="subtitle1" fontWeight="bold">
+          <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
             Discover
           </Typography>
-          <Link href="#" color="inherit" underline="hover" display="block">
+          <Link href="#" color="inherit" underline="hover" sx={{ display: "block" }}>
             About Us
           </Link>
-          <Link href="#" color="inherit" underline="hover" display="block">
+          <Link href="#" color="inherit" underline="hover" sx={{ display: "block" }}>
             Contact Us
           </Link>
-          <Link href="#" color="inherit" underline="hover" display="block">
+          <Link href="#" color="inherit" underline="hover" sx={{ display: "block" }}>
             Login
           </Link>
         </Grid>
 
         {/* Core Service */}
         <Grid item xs={12} md={3}>
-          <Typography variant="subtitle1" fontWeight="bold">
+          <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
             Core Service
           </Typography>
-          <Link href="#" color="inherit" underline="hover" display="block">
+          <Link href="#" color="inherit" underline="hover" sx={{ display: "block" }}>
             Manpower
           </Link>
-          <Link href="#" color="inherit" underline="hover" display="block">
+          <Link href="#" color="inherit" underline="hover" sx={{ display: "block" }}>
             Recruitment
           </Link>
-          <Link href="#" color="inherit" underline="hover" display="block">
+          <Link href="#" color="inherit" underline="hover" sx={{ display: "block" }}>
             Payroll
           </Link>
-          <Link href="#" color="inherit" underline="hover" display="block">
+          <Link href="#" color="inherit" underline="hover" sx={{ display: "block" }}>
             Technical Services
           </Link>
         </Grid>
