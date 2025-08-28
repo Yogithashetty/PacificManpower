@@ -8,26 +8,25 @@ interface SlideProps {
 
 const Slide: React.FC<SlideProps> = ({ image, title }) => {
   return (
-  <Box
-  sx={{
-    width: "100%",
-    height: "100%",
-    backgroundImage: `url(${image})`,
-    //backgroundSize: "cover",
-    //backgroundPosition: "center",
-   backgroundRepeat: "no-repeat", // ✅ this line fixes repetition
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    color: "white",
-    fontSize: "2rem",
-    fontWeight: "bold",
-    textShadow: "2px 2px 5px rgba(0,0,0,0.7)",
-  }}
->
-  <Typography variant="h3">{title}</Typography>
-</Box>
-
+    <Box
+      sx={{
+        width: "100vw",   // full screen width
+        height: "100vh",  // full screen height
+        backgroundImage: `url(${image})`,
+        backgroundSize: "cover",     // cover ensures full fit
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        display: "flex",             // ✅ center title
+        alignItems: "center",
+        justifyContent: "center",
+        color: "white",
+        fontSize: "2rem",
+        fontWeight: "bold",
+        textShadow: "2px 2px 5px rgba(0,0,0,0.7)",
+      }}
+    >
+      <Typography variant="h3">{title}</Typography>
+    </Box>
   );
 };
 

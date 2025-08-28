@@ -1,13 +1,16 @@
 
 import DateAndTime from "./compounent/DateandTime"
 import {AppBar, Box, Toolbar, Typography} from "@mui/material"
-import ImageSlider from "./compounent/Home/Imageslider"
+import Header from "./compounent/Header/Header"
+import Footer from "./compounent/Footer/Footer"
+
+
 function App() {
- 
+
   return (
     <>
-    <Box> 
-      <AppBar
+     <Box>
+   <AppBar
        position="static" 
               sx={{ backgroundColor: 'black' ,height:'50px'}}>
                 <Toolbar>
@@ -15,15 +18,10 @@ function App() {
                   <DateAndTime />
                 </Toolbar>
               </AppBar>
-      <AppBar
-       position="static" 
-              sx={{ backgroundColor: 'grey', color: 'blue' }}>
-        <Toolbar>
-          < ImageSlider />
-        </Toolbar>
-      </AppBar>
-    </Box>
-   
+        </Box>
+                  <Header/>
+                  <Footer />
+ 
     </>
   )
 }

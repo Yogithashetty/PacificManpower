@@ -1,6 +1,19 @@
+import { AppBar, Box, Toolbar, } from "@mui/material";
+import ImageSlider from "../../compounent/Home/Imageslider";
+
 function Home(){
     return(
-        <h1>welcome</h1>
+     <Box> 
+     
+      <AppBar
+       position="static" 
+              sx={{ backgroundColor: 'grey', color: 'blue' }}>
+        <Toolbar>
+          < ImageSlider />
+        </Toolbar>
+      </AppBar>
+    </Box>
+   
     );
 
 }

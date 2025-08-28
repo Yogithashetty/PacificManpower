@@ -10,7 +10,7 @@ const images = [
 ];
 
 // Clone first slide at the end for infinite effect
-const slides = [...images, images[0]];
+const slides = [...images, images[1]];
 
 const ImageSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,7 +53,7 @@ const ImageSlider: React.FC = () => {
           display: "flex",
           width: `${slides.length * 100}%`,
           transform: `translateX(-${currentIndex * 100}%)`, // ✅ FIXED
-          transition: transition ? "transform 0.5s ease-in-out" : "none",
+          transition: transition ? "transform 0.5s ease-in-out" : "",
         }}
       >
         {slides.map((slide, index) => (

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import  { useEffect, useState } from "react"
 import {LocationOn ,Facebook,LinkedIn, }from "@mui/icons-material";
 
 
