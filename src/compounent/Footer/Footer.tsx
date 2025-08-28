@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          alignItems: "ce nter",
+          alignItems: "center",
           flexWrap: "wrap",
           px: { xs: 2, md: 6 },
           py: 4,
