@@ -1,7 +1,6 @@
 
-import { AppBar, Toolbar, Typography, Button, IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import { Home } from "@mui/icons-material";
+import { AppBar, Toolbar, Typography, Button} from "@mui/material";
+
 
 function Header() {
   return (
