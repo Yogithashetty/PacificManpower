@@ -2,7 +2,8 @@
 import DateAndTime from "./compounent/DateandTime"
 import Header from "./compounent/Header/Header"
 import Footer from "./compounent/Footer/Footer"
-import History from "./compounent/About/History"
+
+import ContactUs from "./compounent/Contact/ContactUS"
 
 
 
@@ -12,7 +13,7 @@ function App() {
     <>
                   <DateAndTime />
                   <Header/>
-                  <History />
+                  <ContactUs/>
                   <Footer />
  
     </>
