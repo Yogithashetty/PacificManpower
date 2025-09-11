@@ -1,6 +1,6 @@
 import { Box, Typography, Card, CardContent } from "@mui/material";
 
-export default function AboutCompany() {
+export default function HistoryCompany() {
   return (
     <>
     <Box
